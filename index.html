@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vi Portfolio</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="bootstrap-5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="bootstrap-5.2.3/dist/js/bootstrap.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="aos-master/dist/aos.css" rel="stylesheet">
+    <script src="aos-master/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/aab729e976.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./img/icon.png" type="image/png">
+   
+</head>
+
+<body>
+    <!-- header -------------------->
+    <div id="header">
+        <div class="container">
+            <!-- navbar -->
+            <nav>
+                <img src="./img/logo.png" class="logo" alt="logo web">
+                <ul id="sidemenu" data-aos="fade-left">
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"><a href="#header">Home</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1650"><a href="#about">About</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1750"><a href="#services">Services</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1850"><a href="#portfolio">Projects</a></li>
+                    <li data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1950"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark"onclick="closemenu()"></i>
+                </ul>
+                <i style="color:white ;" data-aos="fade-down" data-aos-easing="linear"data-aos-duration="1500" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header__text" data-aos="fade-right" data-aos-duration="3000">
+                <p style="color: white;">Software Engineer </p>
+                <h1 style="color: white;">Hi, I'm <span>Vi(Ryan)</span><br> Mobile Developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about -------------------->
+    <div id="about" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+                    <img src="./img/user.png">
+                </div>
+                <div class="about_col_2" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
+                <hi class="sub__title">About Me</hi>
+                <p>I am a passionate web and application developer, dedicated to creating dynamic and user-friendly digital experiences.</p>
+                <div class="tab__titles">
+                    <p class="tab__links active__link" onclick="opentab('Muctieu')">Objectives</p>
+                    <p class="tab__links" onclick="opentab('Chucnang')">Functions</p>
+                </div>
+                
+                <div class="tab__contents active__tab" id="Muctieu">
+                    <ul>
+                        <li data-aos="fade-left" data-aos-duration="3000">
+                            <span>Web Development Projects</span><br>
+                            I specialize in building dynamic and responsive websites that showcase my skills and creativity.
+                        </li>
+                        <li data-aos="fade-left" data-aos-duration="3000">
+                            <span>Web Application Development</span><br>
+                            I develop interactive and user-friendly web applications using the latest technologies.
+                        </li>
+                        <li data-aos="fade-left" data-aos-duration="3000">
+                            <span>Client Collaboration</span><br>
+                            I believe in close collaboration with clients to understand their requirements and deliver tailored solutions.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="tab__contents" id="Chucnang">
+                    <ul>
+                        <li>
+                            <span>Mobile-Responsive Design</span><br>
+                            I create websites and applications that are optimized for seamless viewing and navigation on mobile devices.
+                        </li>
+                        <li>
+                            <span>Interactive User Experience</span><br>
+                            I implement engaging effects and animations to enhance user interactions and create memorable experiences.
+                        </li>
+                        <li>
+                            <span>Cross-Browser Compatibility</span><br>
+                            I ensure that the websites and applications I develop function flawlessly across different web browsers and platforms.
+                        </li>
+                        <li>
+                            <span>Efficient Code</span><br>
+                            I write clean and efficient code to optimize performance and loading times of websites and applications.
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-------------- Services ------------------->
+    <div id="services" style= " background-color: black;" >
+        <div class="container">
+            <h1 class= "container__text " style="color:white;" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"> My Services </h1>
+            <div class="services__list" style="color: white;">
+                
+                <div data-aos="zoom-in" data-aos-duration="2000">
+                    
+                    <i class="fa-sharp fa-solid fa-code" ></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in web design and development, creating visually stunning and functional web applications. With expertise in converting design files from Figma, PSD, and AI into high-quality HTML/CSS code, I bring your designs to life on the web.</p>
+
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>I create visually captivating and user-friendly mobile app interfaces. With expertise in UX principles and the latest design trends, I transform ideas into wireframes, mockups, and prototypes that align with your brand. Let's bring your app idea to life!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000"> 
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Crafting intuitive and visually appealing interfaces that enhance user experiences. Research-driven approach, wireframing, and iterative design to create engaging and user-centric designs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------- Portfolio-------------- -->
+<div id="portfolio" style="background-color: black;">
+    <div class="container">
+        <h1 class="sub__title" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">Projects</h1>
+        <div class="project__list">
+            <div class="project" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500">
+                <img src="./img/Project1.png" alt="">
+                <div class="layer">
+                    <h3 style="color:white ;">Website Portfolio</h3>
+                    <p style="color:white ;">Check out my website portfolio, showcasing a collection of my projects and skills in web and mobile development. From visually stunning web designs to intuitive app interfaces, I strive to create impactful digital experiences. Explore the projects to see examples of my work and the technologies I utilize to bring ideas to life. Let's collaborate to create something exceptional for your next digital venture.</p>
+
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500">
+                <img src="./img/project2.png" alt="">
+                <div class="layer">
+                    <h3 style="color:white ;">Tic Tac Toe</h3>
+                    <p style="color: white;">Play the classic Tic Tac Toe game with 2 players, check for the winner, and enjoy a beautiful user interface.</p>
+                    <a href="https://github.com/ryannguyen1012/TicTacToe.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="project" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500">
+                <img src="./img/work-3.png" alt="">
+                <div class="layer">
+                    <h3 style="color:white ;">Kids Toy Store</h3>
+                    <p style="color:white ;">Explore our kid's store app built with C++, featuring a product list, item selection, and secure payment options.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
+</div>
+<!----------------------- contact --------------------------->
+<div id="contact" style="background-color: black;">
+    <div class="container">
+        <div class="row">
+            <div class="contact__left" >
+                <h1 class="sub__title" data-aos="zoom-out-right"data-aos-duration="1000">Contact Me</h1>
+                <p style="color: white;" data-aos="zoom-out-right"data-aos-duration="1500"><i class="fa-solid fa-paper-plane"></i>ryannguyen011201@gmail.com</p>
+                <p style="color: white;" data-aos="zoom-out-right"data-aos-duration="2000"><i class="fa-solid fa-phone-volume"></i>+382526831</p>
+                <div class="social__icons">
+                    <a href="https://www.facebook.com/numbernumber01/"><i data-aos="zoom-out-up"data-aos-duration="2500"class="fa-brands fa-facebook"></i></a>
+                    <a href="https://bom.so/PpxW3S"><i data-aos="zoom-out-up"data-aos-duration="2500" class="fa-brands fa-square-instagram"></i> </a>
+                    <a href="https://github.com/ryannguyen1012"><i data-aos="zoom-out-up"data-aos-duration="2500" class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="./img/my-cv.pdf" data-aos="zoom-out-up"data-aos-duration="2500" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact__right" data-aos="zoom-out-left"data-aos-duration="2500" style="background-color: black;">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div id="footer"  style="background-color:grey; " >
+    <div class="container">
+        <div class="copyright"     >
+            <p style="color: white;">Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by Vi </p>
+        </div>
+    </div>
+</div>
+
+    <script>
+    AOS.init();
+     </script>
+    <!-- script -->
+<script>
+    alert('This is a website made by Vi')
+</script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab__Link");
+        var tabcontents = document.getElementsByClassName("tab__contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+            tablink.classList.remove("active__link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active__tab");
+            }
+            event.currentTarget.classList.add("active__link")
+            document.getElementById(tabname).classList.add("active__tab");
+        }
+        
+    </script>
+    <!-- // navbar for mobile -->
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <!-- contact form -->
+    <script>
+        const scriptURL = 'https://script.google.com/a/macros/student.stu.edu.vn/s/AKfycbynx1ARj5yoFg-S__AaN0pMCMgkffjrzH92YU1-r7lG_0A__8TFUmNXmk2lgXzl-dDO/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
